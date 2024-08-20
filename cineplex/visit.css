@@ -1,0 +1,474 @@
+
+
+*{
+    /* background-color: black; */
+    background: url(images/bg.png);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Visit Page Navbar */
+
+.navbar{
+    background-color: #000000;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    color: aliceblue;
+    
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0, 50px;
+    height: 100%;
+    background: #000000;
+
+
+}
+
+.navbar-container a{
+    text-decoration: none;
+}
+
+.navbar-container :hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+.logo-container :hover{
+    color: aliceblue;
+}
+
+
+.logo-container{
+    flex: 5;     
+}
+
+.logo{
+    font-size: 40px;
+    padding: 20px;
+    
+}
+
+.container{
+    min-height: calc(100vh - 50px);
+}
+
+.home-container{
+    flex: 1; 
+    font-size: 22px;
+    font-weight: bolder;    
+}
+
+.tickets-container{
+    flex: 1;  
+    font-size: 22px;
+    font-weight: bolder;     
+}
+
+.events-container{
+    flex: 1;     
+    font-size: 22px;
+    font-weight: bolder;  
+}
+
+.visit-container{
+    flex: 1;    
+    font-size: 22px;
+    font-weight: bolder;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Feedback Form */
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    /* background: url(images/bg.png); */
+    background-size: calc(1500px);
+    background-color: black;
+
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p{
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 30px;
+
+ 
+}
+
+/* .container .contact-info{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}  */
+
+.container .contact-info .box{
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+
+}
+
+.container .contact-info .box .span{
+    color: #f8f4f6;
+}
+
+.container .contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+
+.container .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+} 
+
+.container .contact-info .box .text h3{
+    font-weight: 500;
+    
+}
+
+.container .contact-info h3{
+    font-size: 25px;
+    color: #c7d7da;
+}
+
+.container .contact-info p{
+    font-size: 18px;
+    color: #c7d7da;
+}
+
+.contact-form{
+    width: 40%;
+    height: 10%;
+    padding: 10px;
+    margin-left: 500px;
+    color: transparent;
+    margin-bottom: 1 px;
+    /* background: #333;  */
+    
+}
+
+.contact-form h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contact-form .input-box{
+    position: relative;
+    margin: 5%;
+    margin-top: 10px;
+
+}
+
+.contact-form .input-box input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    color: aliceblue;
+
+}
+
+.contact-form .input-box .input, 
+.contact-form .input-box .textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    color: aliceblue;
+}
+
+.contact-form .input-box .textarea {
+    color: aliceblue;
+}
+
+.contact-form .input-box .span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: transparent;
+}
+
+.contact-form .input-box input:focus ~ span, 
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+
+    color: #e91e63;
+    font-size: 16px;
+    transform: translateY(-200px);
+}
+
+.contact-form .input-box [type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50x;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contact-info{
+        margin-bottom: 40px;
+    }
+    .container .contact-info,
+    .contact-form{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Visit Page Footer */
+
+
+.footer-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: auto;
+     
+}
+
+.footer{
+    background-color: #111;
+
+}
+
+
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+    background-color: #000000;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+     
+}
+
+.social-icons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+
+}
+
+/* over Effects on Social Media Icons */
+
+.social-icons a:hover{
+    background-color: black;
+    transition: 0.5s;
+    
+}
+
+.social-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+    
+
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-nav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+
+}
+
+.footer-bottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.bottom-bottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footer-nav ul {
+        flex-direction: column;
+    }
+    .footer-nav ul {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+
+    }
+
+}

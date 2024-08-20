@@ -1,0 +1,304 @@
+*{
+    background-color: black;
+    margin: 0;
+    color: aliceblue;
+
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Events Page Navbar */
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0, 50px;
+    height: 100%;
+
+
+}
+
+.navbar-container a{
+    text-decoration: none;
+}
+
+.navbar-container :hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+.logo-container :hover{
+    color: aliceblue;
+}
+
+
+.logo-container{
+    flex: 5;     
+}
+
+.logo{
+    font-size: 40px;
+    padding: 20px;
+    
+}
+
+.container{
+    min-height: calc(100vh - 50px);
+}
+
+.home-container{
+    flex: 1; 
+    font-size: 22px;
+    font-weight: bolder;    
+}
+
+.tickets-container{
+    flex: 1;  
+    font-size: 22px;
+    font-weight: bolder;     
+}
+
+.events-container{
+    flex: 1;     
+    font-size: 22px;
+    font-weight: bolder;  
+}
+
+.visit-container{
+    flex: 1;    
+    font-size: 22px;
+    font-weight: bolder;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Shows and Events */
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    padding-right: 200px;
+}
+
+.container h3{
+    font-size: 38px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(160, 95, 95);
+    text-align: center;
+    margin-left: 100px;
+}
+
+.container p{
+    text-align: center;
+    font-size: 20PX;
+    margin-left: 100px;
+}
+
+.event {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.event img {
+    max-width: 110%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Events Page Footer */
+
+
+.footer-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     
+}
+
+.footer{
+    background-color: #111;
+
+}
+
+
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+     
+}
+
+.social-icons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+
+}
+
+/* over Effects on Social Media Icons */
+
+.social-icons a:hover{
+    background-color: black;
+    transition: 0.5s;
+    
+}
+
+.social-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+    
+
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-nav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+
+}
+
+.footer-bottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.bottom-bottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footer-nav ul {
+        flex-direction: column;
+    }
+    .footer-nav ul {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+
+    }
+}

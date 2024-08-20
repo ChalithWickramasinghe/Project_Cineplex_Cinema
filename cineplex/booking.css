@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+/* Visit Page Navbar */
+
+.navbar{
+    background-color: #000000;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    color: aliceblue;
+    
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0, 50px;
+    height: 100%;
+    background: #000000;
+
+
+}
+
+.navbar-container a{
+    text-decoration: none;
+}
+
+.navbar-container :hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+.logo-container :hover{
+    color: aliceblue;
+}
+
+
+.logo-container{
+    flex: 5;     
+}
+
+.logo{
+    font-size: 40px;
+    padding: 20px;
+    
+}
+
+.container{
+    min-height: calc(100vh - 50px);
+}
+
+.home-container{
+    flex: 1; 
+    font-size: 22px;
+    font-weight: bolder; 
+    color: aliceblue;   
+}
+
+.tickets-container{
+    flex: 1;  
+    font-size: 22px;
+    font-weight: bolder; 
+    color: aliceblue;    
+}
+
+.events-container{
+    flex: 1;     
+    font-size: 22px;
+    font-weight: bolder;  
+}
+
+.visit-container{
+    flex: 1;    
+    font-size: 22px;
+    font-weight: bolder;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.tickets {
+    width: 550px;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-selector {
+    background: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.seats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    font-size: 14px;
+    position: relative;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    outline: 1px solid rgb(120, 120, 120);
+    border-radius: 1px;
+}
+
+.item:nth-child(2)::before {
+    background: rgb(180, 180, 180);
+    outline: none;
+}
+
+.item:nth-child(3)::before {
+    background: #47a3ff;
+    outline: none;
+}
+
+.all-seats {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+    margin: 60px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.seat {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 1px;
+    outline: 1px solid rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.all-seats input:checked+label {
+    background: #47a3ff;
+    outline: none;
+}
+
+.seat.booked {
+    background: rgb(180, 180, 180);
+    outline: none;
+}
+
+input {
+    display: none;
+}
+
+.seats::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 300px;
+    height: 7px;
+    background: rgb(141, 198, 255);
+    border-radius: 0 0 3px 3px;
+    border-top: 1px solid rgb(180, 180, 180);
+}
+
+.screentext {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.timings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.dates {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dates-item {
+    width: 50px;
+    height: 50px;
+    background: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.day {
+    font-size: 12px;
+}
+
+.times {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.time {
+    font-size: 14px;
+    width: fit-content;
+    padding: 7px 14px;
+    background: rgb(233, 233, 233);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.timings input:checked+label {
+    background: #47a3ff;
+    color: white;
+}
+
+.price {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.total div {
+    display: flex;
+    gap: 4px;
+}
+
+.total span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.price button {
+    background: rgb(60, 60, 60);
+    color: white;
+    font-size: 14px;
+    padding: 7px 14px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Visit Page Footer */
+
+
+.footer-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: auto;
+     
+}
+
+.footer{
+    background-color: #111;
+
+}
+
+
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+    background-color: #000000;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 50%;
+     
+}
+
+.social-icons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+
+}
+
+/* over Effects on Social Media Icons */
+
+.social-icons a:hover{
+    background-color: black;
+    transition: 0.5s;
+    
+}
+
+.social-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+    
+
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-nav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+
+}
+
+.footer-bottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.bottom-bottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footer-nav ul {
+        flex-direction: column;
+    }
+    .footer-nav ul {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+
+    }
+
+}
